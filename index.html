@@ -2,52 +2,50 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>西山の自己紹介欄</title>
+    <title>NNの自己紹介欄</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="color:black">
-        名前：西山暢一
-    </h1>
-    
-    <a id="target-link" style="color:black; text-decoration: none;" href="https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9A%E3%83%B3%E3%82%B9">
-        Φ4
-        <!-- ここから円に関するコード -->
-        <div style="
-            width: 600px; 
-            height: 600px; 
-            border-radius: 50%; 
-            overflow: hidden;    
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        ">
-            <div style="
-                position: absolute;
-                top: -50%; left: -50%;
-                width: 200%; height: 200%;
-                background: conic-gradient(blue, purple, red, blue);
-                animation: rotate 1s linear infinite;
-                z-index: 1;
-            "></div>
 
-            <div id="char-display" style="
-                position: relative;
-                z-index: 2;
-                color: white;
-                font-size: 200px;
-                font-weight: bold;
-                font-family: sans-serif;
-                text-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            "></div>
-        </div>
+    <style>
 
-        <style>
-            @keyframes rotate {
-                from { transform: rotate(0deg); }
-                to { transform: rotate(360deg); }
+        h1
+        {
+        /* Boldを優先的に指定し、環境にない場合の代替フォントも並べます */
+        font-family: "Copperplate Gothic Bold", "Copperplate", serif;
+        font-weight: bold; /* 念のため太字指定を明示 */
             }
-        </style>
+
+        *
+        {
+        /* Boldを優先的に指定し、環境にない場合の代替フォントも並べます */
+        font-family: "Copperplate Gothic Bold", "Copperplate", serif;
+        font-weight: bold; /* 念のため太字指定を明示 */
+            }
+
+        #char-display {
+        font-family: "Copperplate Gothic Bold", "Copperplate", serif;
+        font-weight: bold;
+        text-transform: uppercase; /* 小文字が入力されても大文字で表示 */
+    }
+
+    </style>
+
+    <h1>
+        名前:NN
+    </h1>
+
+    <a class="target-link black" href="https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9A%E3%83%B3%E3%82%B9">
+        フォント:Copperplate Gothic Bold
+        <br>φ40mm×t7mm ZDC(亜鉛ダイカスト)
+        
+        
+        <!-- ここから円に関するコード -->
+        <div class="circle">
+            <div class="gradient"></div>
+
+            <div id="char-display"></div>
+        </div>
         <!-- 円に表示する文字 -->
         <script>
         // 【ここを変更！】表示したい文字を自由に入力してください
@@ -72,7 +70,7 @@
         updateText(); // 最初に1文字目を即座に表示
     </script>
     </a>
-    <a id="target-link" style="color:rgb(0, 8, 255); text-decoration: none;" href="https://www.youtube.com/watch?guid=ON&gl=JP&hl=ja&client=mv-google&v=dQw4w9WgXcQ&app=desktop">
+    <a class="target-link blue" href="https://www.youtube.com/watch?guid=ON&gl=JP&hl=ja&client=mv-google&v=dQw4w9WgXcQ&app=desktop">
         FacebookのURLはこちら
 
 
@@ -179,7 +177,8 @@
         <li>アイロボット</li>
         <li>デモリションマン</li>
         <li>ジョンカーター</li>
-
+        <li>クリムゾンピーク</li>
+        <li>ジュピター</li>
 
     </ul>
 
