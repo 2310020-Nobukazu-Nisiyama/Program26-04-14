@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>西山の自己紹介欄</title>
+</head>
+<body>
+    <h1 style="color:black">
+        名前：西山暢一
+    </h1>
+    
+    <a id="target-link" style="color:black; text-decoration: none;" href="https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9A%E3%83%B3%E3%82%B9">
+        Φ4
+        <!-- ここから円に関するコード -->
+        <div style="
+            width: 600px; 
+            height: 600px; 
+            border-radius: 50%; 
+            overflow: hidden;    
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        ">
+            <div style="
+                position: absolute;
+                top: -50%; left: -50%;
+                width: 200%; height: 200%;
+                background: conic-gradient(blue, purple, red, blue);
+                animation: rotate 1s linear infinite;
+                z-index: 1;
+            "></div>
+
+            <div id="char-display" style="
+                position: relative;
+                z-index: 2;
+                color: white;
+                font-size: 200px;
+                font-weight: bold;
+                font-family: sans-serif;
+                text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            "></div>
+        </div>
+
+        <style>
+            @keyframes rotate {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+        </style>
+        <!-- 円に表示する文字 -->
+        <script>
+        // 【ここを変更！】表示したい文字を自由に入力してください
+        const customText = "タペンスは、かつてイギリスで使用されていた硬貨。1797年7月26日の布告により、1シリングの下位を成す法定通貨として規定された。1860年、新たに発行された青銅貨によって置き換えられた。2ペンス硬貨の端、1797年。ジョージ3世。2ペンスと等価であり、タペンス硬貨の語源となった。また1/120ポンドとも等価である。短命な硬貨で、ジョージ3世治世の1797年にソーホー造幣局から発行されたのみに留まった。1971年2月15日にイギリスの貨幣制度が十進法に切り替えられるまでの硬貨であり、それ以降の十進法に基づいた2ペンス硬貨とは異なる。また、2ペンスと等価であるハーフゴート銀貨をタペンスと呼ぶこともあった。この意味でのタペンスは、1662年以降はキリスト教の洗足式の儀礼用にのみ用いられている。"; 
+        
+        // 切り替え速度（ミリ秒。500 = 0.5秒）
+        const speed = 70;
+
+        const display = document.getElementById('char-display');
+        let index = 0;
+
+        // 文字を更新する処理
+        function updateText() {
+            // 文字列の中から現在の番目の1文字を表示
+            display.innerText = customText[index];
+            // 次の文字へ（最後までいったら0に戻る）
+            index = (index + 1) % customText.length;
+        }
+
+        // 実行
+        setInterval(updateText, speed);
+        updateText(); // 最初に1文字目を即座に表示
+    </script>
+    </a>
+    <a id="target-link" style="color:rgb(0, 8, 255); text-decoration: none;" href="https://www.youtube.com/watch?guid=ON&gl=JP&hl=ja&client=mv-google&v=dQw4w9WgXcQ&app=desktop">
+        FacebookのURLはこちら
+
+
+
+    </a>
+    <p>見た映画/ドラマ</p>
+        <!-- ここからにリスト -->
+    <ul>
+        <li>ドクターフー</li>
+        <li>フリンジ</li>
+        <li>シャーロック</li>
+        <li>トロンシリーズ</li>
+        <li>ジュラシックシリーズ</li>
+        <li>デューン/砂の惑星</li>
+        <li>エイリアンシリーズ</li>
+        <li>プロメテウス</li>
+        <li>プレデターシリーズ</li>
+        <li>インディ・ジョーンズシリーズ</li>
+        <li>ジョンウィック</li>
+        <li>コマンドー</li>
+        <li>アメイジングデジタルサーカス</li>
+        <li>モータル・エンジン</li>
+        <li>ゴーストバスターズ</li>
+        <li>シン・ゴジラ</li>
+        <li>シンウルトラマン</li>
+        <li>エヴァンゲリオン</li>
+        <li>ガンダム(鉄血のオルフェンズ、彗星の魔女、ジークアクスなど)</li>
+        <li>シン仮面ライダー</li>
+        <li>バイオハザード</li>
+        <li>アンドリュー</li>
+        <li>トランスフォーマー</li>
+        <li>フランケンシュタイン(2025)</li>
+        <li>ハムナプトラ</li>
+        <li>GIジョー</li>
+        <li>MCU</li>
+        <li>DC</li>
+        <li>ミス・ペレグリン</li>
+        <li>PSYCHO-PASS</li>
+        <li>牙狼</li>
+        <li>オルタードカーボン</li>
+        <li>リベリオン</li>
+        <li>ミッションインポッシブル</li>
+        <li>メイズランナー</li>
+        <li>ヘルボーイ</li>
+        <li>バックトゥザフィーチャー</li>
+        <li>ストレンジャーシングス</li>
+        <li>チャッピー</li>
+        <li>プロジェクトパワー</li>
+        <li>テラフォーマーズ</li>
+        <li>サイバーパンクエッジランナーズ</li>
+        <li>ターミネーター</li>
+        <li>メンインブラック</li>
+        <li>ヘルレイザー</li>
+        <li>スターウォーズ              </li>
+        <li>ダークタワー                </li>
+        <li>ハリーポッターシリーズ      </li>
+        <li>レディー・プレイヤー・ワン  </li>
+        <li>パシフィックリムシリーズ    </li>
+        <li>トータルリコール            </li>
+        <li>バーフバリ                  </li>
+        <li>ロボットシリーズ(インド映画)    </li>
+        <li>フィフス・エレメント        </li>
+        <li>ヴァレリアン                </li>
+        <li>シークレット・レベル        </li>
+        <li>イカゲーム</li>
+        <li>ファンタスティックビースト   </li>
+        <li>ジュマンジ                  </li>
+        <li>クラブファイト              </li>
+        <li>ロードオブザリング          </li>
+        <li>ゴジラ-1.0                  </li>
+        <li>バイオハザード              </li>
+        <li>GANTZ</li>
+        <li>リアルスティール</li>
+        <li>エイリアンVSプレデター(1,2)</li>
+        <li>キングスマンシリーズ</li>
+        <li>フリーガイ</li>
+        <li>アサシンクリード</li>
+        <li>アバターシリーズ</li>
+        <li>インディペンデンスデイシリーズ</li>
+        <li>バトルシップ</li>
+        <li>マトリックスシリーズ</li>
+        <li>2001年宇宙の旅</li>
+        <li>ブレードランナーシリーズ</li>
+        <li>スタートレック</li>
+        <li>モンティパイソン</li>
+        <li>オブリビオン</li>
+        <li>アフターアース</li>
+        <li>ウエストワールド</li>
+        <li>ウォッチャーズ</li>
+        <li>ルーシー</li>
+        <li>007シリーズ</li>
+        <li>パイレーツオブカリビアン</li>
+        <li>スウィーニートッド</li>
+        <li>グッドオーメン</li>
+        <li>ブレットトレイン</li>
+        <li>9～9番目の奇妙な人形～</li>
+        <li>アリータ バトルエンジェル</li>
+        <li>ナショナルトレジャー</li>
+        <li>パーシージャクソンシリーズ</li>
+        <li>センターオブジアース</li>
+        <li>海底2万マイル</li>
+        <li>ナイトミュージアム</li>
+        <li>ナルニア国物語</li>
+        <li>アイロボット</li>
+        <li>デモリションマン</li>
+        <li>ジョンカーター</li>
+
+
+    </ul>
+
+    
+</body>
+</html>
