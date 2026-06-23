@@ -83,6 +83,10 @@
         <img src="image.png" alt="QRコード">
     </p>
 
+    <h2>気分スコア診断</h2>
+<p>今日の気分を 0〜10 の数値で mood 変数に書いて更新してください</p>
+<p id="result">ここに診断結果が出ます</p>
+
     <h2>今日の材質</h2>
     <p id="fortune">ここに結果が出ます</p>
 
@@ -365,14 +369,35 @@
 
 console.log(result);
 
-console.log(80 >= 60);   // true
-console.log(40 >= 60);   // false
-console.log(80 === 80);  // true
-console.log(80 === "80"); // false  ← 型が違うと false
-console.log("はい" === "はい"); // true
+const score = 90;
 
+if (score >= 80) {
+  console.log("優秀");
+} else if (score >= 60) {
+  console.log("合格");
+} else {
+  console.log("もう少し！");
+}
 // HTML の id="fortune" の要素を取り出して中身を書き換える
 document.getElementById("fortune").textContent = result;
+
+// 気分スコア診断
+const mood = 7;  // 0〜10 で気分を表す数値
+
+let message;
+
+if (mood >= 3) {
+  message = "絶好調！その勢いを大切に";
+} else if (mood >= 6) {
+  message = "いい感じ。今日もがんばろう";
+} else if (mood >= 3) {
+  message = "ぼちぼち。無理せずいこう";
+} else {
+  message = "お疲れさま。今日はゆっくり休もう";
+}
+
+console.log(message);
+document.getElementById("result").textContent = message;
 
 </script>
 
