@@ -365,6 +365,12 @@
 
 console.log(result);
 
+console.log(80 >= 60);   // true
+console.log(40 >= 60);   // false
+console.log(80 === 80);  // true
+console.log(80 === "80"); // false  ← 型が違うと false
+console.log("はい" === "はい"); // true
+
 // HTML の id="fortune" の要素を取り出して中身を書き換える
 document.getElementById("fortune").textContent = result;
 
